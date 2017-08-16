@@ -162,7 +162,7 @@ customElements.define('my-component', class extends skate.Component {
   updatedCallback (prev) {
     // You can reuse the original check if you want as part of your new check.
     // You could also call it directly if not extending: skate.Component().
-    return super.updated(prev) && myCustomCheck(this, prev);
+    return super.updatedCallback(prev) && myCustomCheck(this, prev);
   }
 });
 ```
